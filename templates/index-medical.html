@@ -1,0 +1,993 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Starcross is a creative agency html template">
+
+    <title>StarCross - Creative Agency HTML Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Default CSS-->
+    <link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Custom CSS-->
+    <link href="{% static 'css/medical.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Plugin CSS-->
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/plugin.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Font Icons-->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/flaticon1.css' %}" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="medical">
+    <!--PRELOADER-->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <div id="top"></div>
+
+    <!--*Header*-->
+    <header id="inner-navigation">
+
+        <!-- top bar -->
+        <div class="topbar-section">
+            <div class="container">
+                <div class="topbar-inner">
+                    <div class="top-bar-left pull-left">
+                   <ul>
+                       <li><i class="fa fa-phone"></i> Phone: +01-123456789</li>
+                       <li><i class="fa fa-envelope"></i> Email: info@sitename.com</li>
+                   </ul>
+                    </div>
+              
+                    <div class="top-bar-right pull-right">
+                        <ul>
+                  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+
+            <div class="container">
+
+                <div class="logo pull-left">
+                    <a href="index.html"><img  class="logo-img" src="{% static 'images/m-logo.png' %}" alt=""></a>
+                </div>
+                
+                <div id="navbar" class="navbar-nav-wrapper pull-right">
+                    <ul class="nav navbar-nav navbar-right" id="responsive-menu">
+                        <li  class="active">
+                            <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="index.html">Home Slider</a>
+                                    <ul>
+                                       <li><a href="index.html">Home Slider</a></li> 
+                                       <li><a href="index-03.html">Home slider 1</a></li>
+                                       <li><a href="index-04.html">Home slider 2</a></li>
+                                       <li><a href="index-05.html">Home slider 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index-01.html">Home Banner</a></li>
+                                <li><a href="index-02.html">Home Video</a></li>
+                                <li><a href="index-06.html">Home Style 1</a></li>
+                                <li><a href="index-07.html">Home Style 2</a></li>
+                                <li><a href="index-construction.html">Construction</a></li>
+                                <li><a href="index-realestate.html">Real Estate</a></li>
+                                <li><a href="index-apps.html">Mobile Apps</a></li>
+                                <li><a href="index-medical.html">Medical</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="team.html">Team</a>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="blog-listing-left.html">Blog left Sidebar</a></li>
+                                <li><a href="blog-listing.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-listing.html">Blog List</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="header-search">
+                                <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+                                <div class="search-box-wrap" style="display: none;">
+                                    <div class="searchform" role="search">
+                                        <form class="search-form" method="get" action=".">
+                                            <input type="text" name="s" id="s" placeholder="Search..." value="" class="search-field">
+                                            <input type="submit" class="search-submit" value="Search">
+                                        </form>
+                                    </div><!-- .searchform -->
+                                </div><!-- .search-box-wrap -->
+                            </div>
+                        </li>
+                    </ul>
+            
+                </div><!--/.nav-collapse -->
+            </div>
+            
+            <div id="slicknav-mobile"></div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!--* End Header*-->
+
+    <!-- Slider -->
+    <div id="home-banner" class="carousel slide ps_indicators_l  ps_control_rotate_f kbrns_zoomInOut thumb_scroll_x swipe_x ps_easeOutQuart" data-ride="carousel" data-pause="hover" data-interval="10000" data-duration="2000">
+
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- First Slide -->
+            <div class="item active">
+                <!-- Slide Background -->
+                <img src="{% static 'images/medical/slide-1.jpg' %}" alt="slider_01" />
+                <!-- Left Slide Text Layer -->
+                <div class="caption_slide1 fadeInRight" data-animation="animated fadeInRight">
+                    <h1 class="white">Exceptional People, Exceptional Care</h1>
+                    <p class="white">Whatever work means for you we brings all the pieces and people you need together so you can actually get things done.</p>
+                    <a class="mt_btn_medical-bor mar-top-10" href="#">MAKE AN APPOINTMENT</a>
+                </div><!-- /Left Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+            <!-- Second Slide -->
+            <div class="item">
+                <!-- Slide Background -->
+                <img src="{% static 'images/medical/slide-2.jpg' %}" alt="slider_02" />
+                <!-- Right Slide Text Layer -->
+                <div class="caption_slide1 caption_slide1_right wow fadeInLeft" data-animation="animated fadeInLeft">
+                     <h1 class="white">The Modern Dentistry, You’ve Been Missing</h1>
+                    <p class="white">Whatever work means for you we brings all the pieces and people you need together so you can actually get things done.</p>
+                    <a class="mt_btn_medical-bor mar-top-10" href="#">MAKE AN APPOINTMENT</a>
+                </div><!-- /Right Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+            <!-- Third Slide -->
+            <div class="item">
+                <!-- Slide Background -->
+                <img src="{% static 'images/medical/slide-3.jpg' %}" alt="slider_03" />
+                <!-- Center Slide Text Layer -->
+                <div class="caption_slide1 caption_slide1_center cap-new wow fadeInDown" data-animation="animated fadeInDown">
+                     <h1 class="white">Exceptional People, Exceptional Care</h1>
+                    <p class="white">Whatever work means for you we brings all the pieces and people you need together so you can actually get things done.</p>
+                    <a class="mt_btn_medical-bor mar-top-10" href="#">MAKE AN APPOINTMENT</a>
+                </div><!-- /Center Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+        </div><!-- End of Wrapper For Slides -->
+
+        <!-- Left Control -->
+        <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- Right Control -->
+        <a class="right carousel-control" href="#home-banner" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div> <!-- End Slider -->
+
+    <!--*About*-->
+    <section id="mt_about">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <div class="about_services text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-surgery"></i>
+                            <h3 class="text-uppercase">Locations and Directions</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                            <a href="#" class="mt_btn_medical mar-top-25">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-multiple-users-silhouette"></i>
+                            <h3 class="text-uppercase">Our Health Specialist</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                            <a href="#" class="mt_btn_medical mar-top-25">Find a Doctor</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-hospital"></i>
+                            <h3 class="text-uppercase">Appointments and Access</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                            <a href="#" class="mt_btn_medical mar-top-25">Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*EndAbout*-->
+
+    <!--*Features-one*-->
+    <section class="features-one">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="feature-style-content wow slideInLeft" data-wow-duration="2s">
+						<h2 class="line-height">Renowned Specialists in Plastic Surgery!</h2>
+						<p>On the other hand we denounce with righteous of pleasure indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the trouble that moment so blinded by desire that they cannot foresee the pain and trouble that are bound.<br><br> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="mt_btn_medical mar-top-20">Discover More <i class="fa fa-angle-right"></i></a>
+					</div><!-- /.feature-style-content -->
+				</div><!-- /.col-md-6 -->	
+				<div class="col-sm-5">
+					<div class="medi-img text-center"><img src="{% static 'images/medical/img-a.png' %}" class="has-dropshadow wow slideInRight" data-wow-duration="2s" alt="Awesome Image"></div>
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!--*EndFeatures-one*-->
+
+	<!--*Features*-->
+    <section id="features">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+        	<!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading text-center">
+                    <h2 class="section_title">
+                        <span>Patients Benefits</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua men who are so beguiled and demoralized by the charms of pleasure of the moment so blinded by desire.</p>
+                </div>
+            </div>
+            <div class="about_services text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-doctor"></i>
+                            <h3 class="text-uppercase">Qualified Doctors</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-multiple-users-silhouette"></i>
+                            <h3 class="text-uppercase">Medical Counselling</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item">
+                            <i class="flaticon-dna-1"></i>
+                            <h3 class="text-uppercase">DNA Test Services</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item mar-top-30">
+                            <i class="flaticon-hospital-1"></i>
+                            <h3 class="text-uppercase">Affordable Dental Care</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item mar-top-30">
+                            <i class="flaticon-microscope"></i>
+                            <h3 class="text-uppercase">Equipment & Technology</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="medical-item mar-top-30">
+                            <i class="flaticon-iv-pole"></i>
+                            <h3 class="text-uppercase">Root Canal Therapy</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos torquent per conubia nostra, per inceptos himenaeos..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*Endfeatures*-->
+
+    <!--*Features-two*-->
+	<section class="features-two">
+		<div class="container wow slideInRight" data-wow-duration="2s">
+			<div class="row">
+				<div class="col-sm-5 pad-top-60">
+					<img src="{% static 'images/medical/img-a1.png' %}" class="has-dropshadow" alt="Awesome Image">
+				</div><!-- /.col-sm-5 -->
+				<div class="col-sm-7">
+					<div class="feature-style-content">
+						<h2 class="line-height">We offer Specialized Orthopedics to Meet your Needs</h2>
+						<p>In order to design a mobile app that is going to be module downloaded and accessed frequently by users, you need offer an experience that isn’t available elsewhere. Often businesses get caught up.<br><br>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="mt_btn_medical mar-top-15">Discover  <i class="fa fa-angle-right"></i></a>
+					</div><!-- /.feature-style-content -->
+				</div><!-- /.col-sm-7 -->	
+				
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!--*EndFeatures-two*-->
+
+    <!-- Section Pricing -->
+    <section class="pricing">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+             <!-- section title -->
+            <div class="section_heading">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="mt_heading text-center">
+                            <h2 class="section_title">
+                                <span>Pricing</span>
+                            </h2>
+                            <p class="heading_txt">We are here to Acelerate your business and help you find the way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-wrapper">
+                <div class="pricing-inner">
+                    <div class="col-sm-4">
+                        <div class="pricing-item">
+
+                            <div class="pricing-content">
+                                <div class="pricing-title">
+                                    <h3>Aids Test</h3>
+                                </div><!-- .pricing-title -->
+                                <i class="flaticon-ribbon"></i>
+                                <div class="pricing-cost">
+                                    <span class="pricing-price">20%</span>
+                                    <span class="pricing-currency">Discount</span>
+                                </div><!-- .pricing-cost -->
+                                <p>On the other hand we denounce with righteous of pleasure indignation and dislike men who are so beguiled and demoralized.</p>
+                                 <div class="button">
+                                    <a href="#" class="mt_btn_medical">Get Offer</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div><!-- .pricing-item -->
+
+                    <div class="col-sm-4">
+                        <div class="pricing-item p-recommended">
+
+                            <div class="pricing-content">
+                                <div class="pricing-title">
+                                    <h3>Blood Test</h3>
+                                </div><!-- .pricing-title -->
+                                <i class="flaticon-blood-drop"></i>
+                                <div class="pricing-cost">
+                                    <span class="pricing-price">20%</span>
+                                    <span class="pricing-currency">Discount</span>
+                                </div><!-- .pricing-cost -->
+                                <p>On the other hand we denounce with righteous of pleasure indignation and dislike men who are so beguiled and demoralized.</p>
+                                 <div class="button">
+                                    <a href="#" class="mt_btn_medical">Get Offer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .pricing-item -->
+
+                    <div class="col-sm-4">
+                        <div class="pricing-item">
+
+                            <div class="pricing-content">
+
+                                <div class="pricing-title">
+                                    <h3>Medical Test</h3>
+                                </div><!-- .pricing-title -->
+                                <i class="flaticon-stethoscope"></i>
+                                <div class="pricing-cost">
+                                    <span class="pricing-price">20%</span>
+                                    <span class="pricing-currency">Discount</span>
+                                </div><!-- .pricing-cost -->
+                                <p>On the other hand we denounce with righteous of pleasure indignation and dislike men who are so beguiled and demoralized.</p>
+                                 <div class="button">
+                                    <a href="#" class="mt_btn_medical">Get Offer</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div><!-- .pricing-item -->
+
+                    </div><!-- .pricing-table-inner -->
+                </div> <!-- .pricing-table-wrapper -->
+        </div> <!-- .container -->
+    </section>
+    <!-- EndSection Pricing -->
+
+    <!--=* Get Started Section*=-->
+    <!-- <section id="mt_get_started">
+        <div class="container">
+            <div class="row wow slideInDown" data-wow-duration="2s">
+                <div class="col-sm-6">
+                    <div class="watch_content">
+                        <h2 class="white">We offer Specialized Orthopedics to Meet your Needs</h2>
+                        <p class="white">To develop a financial strategy for your future, it's important for your financial professional to see a complete, 360-degree view of your financial picture, including how your retirement assets are intadfegrated and work with one another.</p>
+                        <div class="ui-button mar-top-30">
+                        	<a href="#" class="btn mt_btn_white btn-apple">
+                        		<span>Available on the</span>
+                        		<span>App Store</span>
+                        	</a>
+                        	<a href="#" class="btn mt_btn_white btn-android">
+                        		<span>Available on the</span>
+                        		<span>Play Store</span>
+                        	</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                	<div class="ui-img"><img src="images/medical/img-a1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="navy-overlay"></div>
+    </section> -->
+    <!--* End Get Started Section*-->
+
+    <!--*Team*-->
+    <section id="const-team">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading text-center">
+                    <h2 class="section_title">
+                        <span>Meet our Doctors</span>
+                    </h2>
+                    <p class="heading_txt">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                </div>
+            </div>
+            <div class="row slider-mediteam">
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/mmember-1.jpg' %}" alt="team">
+                            <div class="team-overlay">
+                                 <h4 class="white">Neurology</h4>
+                                 <p class="white">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                                 <ul class="socialicons">
+                                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <div class="member_name">
+                            <h3>Dr. Michet Bick</h3>
+                            <span>Neurology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/mmember-2.jpg' %}" alt="team">
+                            <div class="team-overlay">
+                                 <h4 class="white">Neurology</h4>
+                                 <p class="white">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                                 <ul class="socialicons">
+                                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <div class="member_name">
+                            <h3>Dr. Johnson Sak</h3>
+                            <span>Dentist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/mmember-3.jpg' %}" alt="team">
+                            <div class="team-overlay">
+                                 <h4 class="white">Neurology</h4>
+                                 <p class="white">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                                 <ul class="socialicons">
+                                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <div class="member_name">
+                            <h3>Dr. Nyung Chung</h3>
+                            <span>Physiciat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/mmember-4.jpg' %}" alt="team">
+                            <div class="team-overlay">
+                                 <h4 class="white">Neurology</h4>
+                                 <p class="white">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                                 <ul class="socialicons">
+                                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <div class="member_name">
+                            <h3>Dr. Krokro Ber</h3>
+                            <span>Medical Consultant</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Team*-->
+
+    <!--* Fun And Facts*-->
+    <section id="mt_fun">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <div class="row facts_row">
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="flaticon-multiple-users-silhouette white"></i>
+                        <p class="fun-facts_figure timer white" data-to="875" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> HAPPY PATIENTS </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="flaticon-stethoscope white"></i>
+                        <p class="fun-facts_figure timer white" data-to="520" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> OUR SERVICES </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="flaticon-doctor white"></i>
+                        <p class="fun-facts_figure timer white" data-to="850" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> OUR DOCTORS </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="flaticon-ribbon-1 white"></i>
+                        <p class="fun-facts_figure timer white" data-to="350" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> Rating </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Fun And Facts*-->
+
+    <!--* Testimonial*-->
+    <section id="const-testi">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading text-center">
+                    <h2 class="section_title">
+                        <span>Our Happy Clients say</span>
+                    </h2>
+                    <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable 
+                    dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+                </div>
+            </div>
+
+            <div class="row slider-meditesti">
+                <div class="col-sm-4">
+                    <div class="item">
+                    <div class="testimonial_main">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <div class="client-pic"><img src="{% static 'images/team/member-1.jpg' %}" alt=""></div>
+                        <h4>
+                            <a href="#" class="text-uppercase">Christ Daniel</a>
+                            <span>MD of Nicolos</span>
+                        </h4>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="item">
+                        <div class="testimonial_main">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                            <div class="client-pic"><img src="{% static 'images/team/member-2.jpg' %}" alt=""></div>
+                            <h4>
+                                <a href="#" class="text-uppercase">John Wakson</a>
+                                <span>CEO Of Micro group</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="item">
+                        <div class="testimonial_main">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                            <div class="client-pic"><img src="{% static 'images/team/member-3.jpg' %}" alt=""></div>
+                            <h4>
+                                <a href="#" class="text-uppercase">Tim Loran</a>
+                                <span>CEO Of Tim Lake</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* EndTestimonial*-->
+
+    <!--* Blog*-->
+    <section id="mt_blog" class="light-bg">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <div class="blog_post_sec">
+	            <div class="blog_post_inner">
+	                <!-- section title -->
+		            <div class="section_heading wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+		                <div class="row">
+		                    <div class="col-xs-12">
+		                        <div class="mt_heading text-center">
+		                            <h2 class="section_title">
+		                                <span>Our Latest Blog</span>
+		                            </h2>
+		                            <p class="heading_txt">On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+	                <div class="row">
+	                    <div class="col-md-4 col-sm-12 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_20.jpg' %}" alt="image" class="img-responsive center-block post_img" /> </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Successfully Dental Implement</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Mon, 04-09-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail text-center">
+	                                            <a href="blog-details.html" class="mt_btn_medical">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_19.jpg' %}" alt="image" class="img-responsive center-block post_img" />
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Patients’ Health is Our Priority</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Tues, 04-15-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail text-center">
+	                                            <a href="blog-details.html" class="mt_btn_medical">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_18.jpg' %}" alt="image" class="img-responsive center-block post_img" />
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Never Let Them See You Sweat</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Tues, 04-15-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail text-center">
+	                                            <a href="blog-details.html" class="mt_btn_medical">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>    
+	            </div>
+ 			</div>
+        </div>
+    </section>
+    <!--* End Blog*-->
+
+    <section id="newsletter" class="wow slideInLeft" data-wow-duration="2s">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-6">
+        			<div class="news-content">
+	                    <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+	                    <p class="mar-0">Subscribe to our brief newsletter to get exclusive discounts and new theme launches right in your inbox.</p>
+	                </div>
+        		</div>
+        		<div class="col-md-6">
+        			<div class="mailpoet_form">
+	                    <form target="_self" method="post" action="" novalidate="">
+	                        <input type="email" class="mailpoet_text" name="" title="Email" placeholder="Please specify a valid email address.">
+
+	                        <div class="button"><input type="submit" class="mailpoet_submit" value="Subscribe!"></div>
+	                    </form>
+	                </div>
+        		</div>
+        	</div>
+        </div>
+    </section>
+
+    <!--*Footer*-->
+    <footer id="mt_footer">
+        <div class="container">
+
+            <div class="row wow slideInLeft">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="follow_us">
+                        <a href="index.html">
+                            <img src="{% static 'images/w-logo.png' %}" alt="Logo">
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+                        <h4>Follow Us on</h4>
+                        <ul class="social_icons">
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_contact_ftr">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-quick-links-4">
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_post_ftr">
+                        <h3>Latest Posts</h3>
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-1.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Unde omnis iste natus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-8.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Aenean a mi et risus facilisis</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-5.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibuss</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-7.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                       <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_post_ftr">
+                        <h3>Head Office</h3>
+                        <div class="textwidget"><p class="white">PO Box 16122 Grasswood Street West<br>
+                            Sydney 5217 Australia</p>
+                            <p class="white">Mon-Thu: 9:00 – 21:00<br>
+                            Fri: 8:00 – 21:00<br>
+                            Sat: 10:00 – 15:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt_footer_copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copy_txt">
+                            <p class="mar-0 white">&copy; Copyright 2018 - starcross All rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="made_txt">
+                           <ul class="pull-right">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--* End Footer*-->
+
+    <!-- back to top -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-placement="left">
+        <span class="fa fa-arrow-up"></span>
+    </a>
+
+    <!--*Scripts*-->
+
+    <!-- Latest jquery --><script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+    <!-- latest Bootstrap --><script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Parallax jquery --><script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+    
+    <!-- Fancybox jquery --><script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+
+    <!-- Easing Jquery --><script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <!-- Swiper slider jquery --><script src="{% static 'js/swiper.js' %}"></script>
+
+    <!-- wow animated jquery --><script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!-- Navigation jquery --><script src="{% static 'js/jquery.nav.js' %}"></script>
+
+    <!-- Slick jquery --><script src="{% static 'js/slick.js' %}"></script>
+
+    <!-- Slicknav jquery --><script src="{% static 'js/slicknav.js' %}"></script>
+
+    <!-- custom nav jquery --><script src="{% static 'js/custom-nav.js' %}"></script>
+
+    <!-- Owl Carousel Jquery --><script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- Appear Jquery --><script src="{% static 'js/jquery.appear.js' %}"></script>
+
+    <!-- isotope Jquery --><script src="{% static 'js/isotope.min.js' %}"></script>
+
+    <!-- CountTo Jquery --><script src="{% static 'js/jquery.countTo.js' %}"></script>
+
+    <!-- Touch Swipe Jquery --><script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+
+    <!-- main default Jquery --><script src="{% static 'js/main.js' %}"></script>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,910 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Starcross is a creative agency html template">
+
+    <title>StarCross - Creative Agency HTML Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <!--Custom CSS-->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Plugin CSS-->
+    <link href="{% static 'css/plugin.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Font Awesome-->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <!--PRELOADER-->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <div id="top"></div>
+
+    <!--*Header*-->
+    <header>
+        <nav>
+            <div class="navbar-wrapper" id="navigation">
+                <div class="navbar navbar-default navbar-fixed-top reveal-menu-home" role="navigation">
+                    <div class="container nav-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="{% static 'images/logo.png' %}" alt="Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active">
+                                            <a href="index.html#top">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'services' %}">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'about_us' %}">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'portfolio' %}">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'team' %}">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'testimonial' %}">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'blog' %}">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'contact' %}">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--* End Header*-->
+
+    <!-- mt-banner* -->
+    <section id="mt_banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image:url({% static 'images/slider/bg2.jpg' %})"></div>
+                    <div class="banner_caption_text wow fadeInDown" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <h1>Business Office System Between Toronto & Ottawa.</h1>
+                        <p>Maecenas tincidunt libero nec ullamcorper ullamcorper. Donec rutrum et quam ac tristique. Integer velit lectus, tincidunt sit amet velit vel, convallis aliquet nibh. Maecenas tincidunt libero nec ullamcorper</p>
+                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read More</a>
+                    </div>
+                    <div class="blue-overlay"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image:url({% static 'images/slider/bg1.jpg' %})"></div>
+                    <div class="banner_caption_text wow fadeInDown" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <h1>Business Office System Between Toronto & Ottawa.</h1>
+                        <p>Maecenas tincidunt libero nec ullamcorper ullamcorper. Donec rutrum et quam ac tristique. Integer velit lectus, tincidunt sit amet velit vel, convallis aliquet nibh. Maecenas tincidunt libero nec ullamcorper</p>
+                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read More</a>
+                    </div>
+                    <div class="blue-overlay"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image:url({% static 'images/slider/bg3.jpg' %})"></div>
+                    <div class="banner_caption_text wow fadeInDown" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <h1>Business Office System Between Toronto & Ottawa.</h1>
+                        <p>Maecenas tincidunt libero nec ullamcorper ullamcorper. Donec rutrum et quam ac tristique. Integer velit lectus, tincidunt sit amet velit vel, convallis aliquet nibh. Maecenas tincidunt libero nec ullamcorper</p>
+                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read More</a>
+                    </div>
+                    <div class="blue-overlay"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image:url({% static 'images/slider/bg4.jpg' %})"></div>
+                    <div class="banner_caption_text wow fadeInDown" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <h1>Business Office System Between Toronto & Ottawa.</h1>
+                        <p>Maecenas tincidunt libero nec ullamcorper ullamcorper. Donec rutrum et quam ac tristique. Integer velit lectus, tincidunt sit amet velit vel, convallis aliquet nibh. Maecenas tincidunt libero nec ullamcorper</p>
+                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read More</a>
+                    </div>
+                    <div class="blue-overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <svg class="header_angle header_angle_03" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 15">
+            <path fill="#fff" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+        </svg>
+
+    </section>
+    <!-- End mt-banner* -->
+
+    <!--* Services*-->
+    <section id="mt_services" class="light-bg">
+        <div class="container">
+
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="mt_heading">
+                            <h2 class="section_title">
+                                <span>We bring the best things For you</span>
+                            </h2>
+                            <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable 
+                            dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="button pull-right">
+                            <a href="#" class="mt_btn_blue mg-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box text-center">
+                        <div class="icon">
+                            <i class="icon-trophy"></i>
+                        </div>
+                        <h3><a href="https://competition.adesignaward.com/">Award Winning Design</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box text-center">
+                        <div class="icon">
+                            <i class="icon-browser"></i>
+                        </div>
+                        <h3><a href="https://en.wikipedia.org/wiki/Web_development">Web Development</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box text-center">
+                        <div class="icon">
+                            <i class="icon-mobile"></i>
+                        </div>
+                        <h3><a href="https://www.ibm.com/topics/mobile-application-development">Mobile Apps Development</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box box-mar text-center">
+                        <div class="icon">
+                            <i class="icon-newspaper"></i>
+                        </div>
+                        <h3><a href="https://www.blogger.com/about/?bpli=1&pli=1">Blogging</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box box-mar text-center">
+                        <div class="icon">
+                            <i class="icon-grid"></i>
+                        </div>
+                        <h3><a href="https://getbootstrap.com/docs/4.0/getting-started/browsers-devices/">Bootstrap Support</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="box box-mar text-center">
+                        <div class="icon">
+                            <i class="icon-linegraph"></i>
+                        </div>
+                        <h3><a href="https://www.growthspace.com/post/manager-development-strategies">Manager Development</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Services*-->
+
+    <!--*About*-->
+    <section id="mt_about">
+        <div class="container">
+            <div class="section_heading">
+                <div class="mt_heading text-center">
+                    <h2 class="section_title">
+                        <span>Stay aware of your public contributions</span>
+                    </h2>
+                    <p class="title-padding">Phasellus commodo id lectus blandit consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis consequat ligula quis.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-sm-7">
+                    <div class="about_services">
+                        
+                        <div class="col-sm-6">
+                            <i class="icon-newspaper"></i>
+                            <h3>Business Consulting</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="icon-strategy"></i>
+                            <h3>Branding</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                        <div class="col-sm-6 mg-1">
+                            <i class="icon-target"></i>
+                            <h3>Implimentation</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                        <div class="col-sm-6 mg-1">
+                            <i class="icon-document"></i>
+                            <h3>Documentation</h3>
+                            <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                	<div class="image-rev"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUQEBIVEBUVFhAVFRYVEBUQFRUVFRUWFhUVFhUYHSggGBolGxUVITEhJSsrLi4uFx8zODMsNyotLisBCgoKDg0OGhAQGi0lHyUtLS0tKy0tLS8tKy0tLS0wLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALQBFwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAADBAIGAAUHAQj/xABFEAACAQIEAwUDCQUGBQUAAAABAgMAEQQSITEFBkETIlFhcTKBkQcUI0JSYqGxwTNygpLRFWODouHwJFNzk7IlNEOz8f/EABoBAAIDAQEAAAAAAAAAAAAAAAMEAQIFBgD/xAA5EQACAQIDBAgEAwgDAAAAAAABAgADEQQhMRJBUWEFEyJxgZHB8DKhsdFS4fEGFCMzYnKCwiRCkv/aAAwDAQACEQMRAD8A4sooirXiiiKtHAgGMxVoqrWKtGVaIFgWaRVaMq16q0RVogECzSKpRFWpqtFVKuFgWeQVKIqVNUoipRAsEXkFSiBKIqVJUq+zBF4MJUwlGCVIJVwsGXm/+TrACbiUSnYCVj5WjYA/zFasnKvyeyid4cdHeGFro4OkyE3UC2o2NxuNuoNUTl/jksLYh8KwWQrHho2uB+0fPK4uenZot+gYmuvfJXxpZsJ81MmeWC4YlgzMjO2Vm1PeuCD7j1FZWKtUa+4ToMBt0aXMy54eBI1CIoRVAAVQFAA2AArlvyvfKH81DcPwbkTsB2sin9irD2FI2kItr9UG+9rWf5TOcRwrCBkAeeUskKnYEC7SMOqrcadSyjS9x8xYiZpHaRyXZizMxNyxY3Zj5km9BAhoMm+9Rka21elxUNzerT0GFosOIeM3Riv5H1Gxr2hsKgXGkggEWM3uD48p0lXKftLqPeNxW3jZWGZSGB6g3FUe1HwmMeFsyG3iDsfUU1TxRGT5j5xGtgFbOnkeG78pcSlRK1nDcWs8eddDsw8D/SjFK0BYi4mObqSDqIuVqBWmStDZaraWDRZloTLTTLUGWqlYUNFGWoMKZZaEy0MiFVosy0JhTTCgsKoRDKYuwrKIwrKpaGBiSiiqteKtGVaqol2aYq0ZVrxVo6rRAIBmnirRVWsRaOiUQCAZpFUoipU1WiqlECwDPIKlFVKmqUVUogWBZ5BUqSpRVSiqlX2YFngQlJcYxgijKg98jTyB+sac4lihDHf6x0Uefj6Cq3hcE+Jc3zEfWYKW1N8qadTY/A+FLYmtsdhdT8poYDC9aesb4QfP8psOCB4MOsyELJIzZbloyFIKhgbgaWJB+8N+nWPkc5WkQDiTsVEkeWOME94fWd/K47o9/hVG4pgQuHjjUaBWsisy97SNTkcG+xOn2ulrV1DnHi/9jcCSNCFmMUeHitpaQpZ3A+6AzeoA60g67IAm7ecj+V3mP59xNwhvFh7wR+BKn6Rh6vceYRapNqxRXjm3qf8Ad6HIvBoNx4E1OvFW1e16evMqBr1jUa9JnhFRYVI1E1EibDl3FdnOAfZfuH1Psn4/nVyKVzwOQQRuCCPdXS7XAPjr8a0cC11K8Ji9KqFdX4j6frFGWhstOMtCZacImarRRloTLTbLQmWqEQytFWWhMtMstCZaGRDK0VZaGwph1oLChkQ6tF2FeUVxWUOGDRVFoqrXiLTCLXlElmnirRkWsRaOi0RVi7NMRKKq1irR0SiqsXZp4qUZUr1UoqJRAsAzyKpRVSpqlGVKIBAM8gqURUoqpQ8fJ2cLv9lGI9bafjarZDMwVyxsNTKdxnF9pMSNhdF9FO/vNbXl/DgRqSBd7uSUfTqoBU9VRf8Aue8VmfwHoKuPCiucAFVAtazSIFy26nqQh/m9wxFJZtozskRaaBV0Hv8AOXvl/DpJiYRI6rGjLLITJ3bQAZMwf2byMP5jpVQ+V/i02Px5EaOcPADHEwU5WJsZJAdiCQAD1CA9aufDOESYrD3U95pES7NnAyxSSyG46FmTx1rXYz5MzilKvio0CkNoD5jqPG9TVBJJG7KQGAyM5FLA6C7KwG1yptfwv40uBerNx7kyXh0LSPNHKJAFGQONpIjfvAC1Vs6ChlSDYi0kEHMGbD+wMWwjMcEkqyqrI0aGRSDpYsuikG4INrEa1tjyW0KCTH4qDAqwuFLfOZiL27sUVwdj9aq9HxLEBOzWeUJ9gTOF1+6Dak3A2FVkxnHxQpIVgkaaMey7xdiW/gzNb40sRUlqLGvSQZlq8NZesqJaCauk8L1w8J/u4v8AxF65u1dH5d72DiP3LfAkfpT2APbYcvWY/TI/ho3P0/KHZaGy02y0JlrTImErRNloTLTbLQXWqEQ6tFGWhOtNOtAcUMiHVos60BxTbCgOKERGFMWYVlScVlChxBItGRa8RaOi1KiVZpJFoyLUUWmEWjARZmmItGRaxFo6LRQIuzTESjKleotGVaIBF2eeKlGVKkiVuOGcCmnUsi3A61YkAXOUD2mNlFzNWqVruZTbCt5sg/zX/St/iMC8Rs6lfUEVX+c9MMv3pYx/lkP6VWtbqmI4GWwh/wCTTB/EPrKFIe8P318utW3hExZst2JZrD6ZXu5KqT787fHfQ1UMSNj5g1c+W+FyzDOrIFutywQHSxFguu1t7X86xqSszWAnX1sRSopt1GsOPv6DOX3gOMeQdrDiEUwtiUaE915JJC2ZyE0sESMC22Q1acRwJpVWRZGJGUjLnVT3s2vev+f6DlXyaphWaaWSRxiQzmNFQWcGOQ3udL6vp5Cum8J4xKYbNnX2vajN1Gaw2UAb6X6Cr5nTjwgXZQ9jwmj5wmhjwZj+anGSYhHABAZ4nXKoK93pnv8AwiuDS3vYixBIIIsQRoQRXcflBxk/D4IcXhpy5+kCdot2Acxg90qP92riU8jSO0jm7MzMx2uWNz+JoB7vfkIamTs5wdCJ1+NFClmCrqWIUDxJNhW65p5OxnDezbEqoWQaFWzAG2xNVhRNGNqia9Y15evT0wCompA1B69LCQk3rpfKyf8ABQ+hPxZ65oxrqnLqWwcP/TU/HX9ae6OHbbu9ZjdONaig/q9DDMtDZabZaCy1qmc6rRRloLrTbCguKoRGFaJuKC4ppxQHFDMYUxVxQHFNOKXcUFoypizisqTivKGYwJ6i0ZFqMa0dFqyiCdpJFphFqKLR0WjKIs7SSLWx4Xw+TESrFEuZm9wAG5J6Ch4aAFbm+5HwA/rXVeSOHJBhc41aWxJIsbAWUaE6bn+Kq1avVrffIw9HrqmzfLUysQ8hzfWkVd7kKWF+ltvibUhxLl2TDqGLK+pBC3uPD1rpHEZtO6RVPx4kL3Aza+I/rQ6FaoxzMLjcPSpJ2VN+OZmkwHCJ5nKIhuN8wyhfUn8qu3CsVJw+BlkAYCxuGvuQLEG3jXuDzFQ2qn41HExdoGDLm0HiPrLXqlTrOyw7PCDpU+oG3TJ2s7Hw4StYzF9tIXBMZPgTY/Db8vSqrz1NIsEd7H6ZfbRJNMkmxYH4irZj+HdkeuvQj9a0PNaE4UDKJAJIzlbrcFe6RqG1G2vrtTNVQaR2eEzMLUYYpAxsdrPxlDw8XbuI1w6Mzad1pI7eJ0YqAPSt/JxGLDL2OFZkCsCZFVX7V7HNcGwKDQbjy2vUXwvYRtFh9ZnAzjMC6xkfs0IAzHxtr1t4auPAlYs7gqgsCQCdTcel9PKkDs0RmbHfy5ffym8zfvBu2aDQfi/qPL8PnwnmEBiUvhpzG6tGbmN1YCzg6IHuNQPDWr1gZ+OxcJllDxyK18rsoLBWsCczWt7QtcC3uqrYNlgCuI2aUm4W3eXoMxHsA+A73pvVsm5vxJwiQRmPvhrqbEWuFygaaXD/AArPfF01PL35cr/KN9cB8Xvv5Sk4rDY58P2uOnZoioCXPbNmZkYWtZTcKfrdK0krQqLLG0h8ZHyr/IliP5qsXFuLLOiwnOjJmuGJynvGy2HoLeFrVPCcnviYUeEhnMuSQ3vGEIvnBsD3eo16eNHDIw7Jk06zE9oW1sLfaVrAYx85YWiRBnfslERKrbuZx3zmYqupOrVnFubcfimRpsTIxS4WzlbX329B8Kc5g4euGzQRs0ilsxdkyEqtxGCLm27N5hkNaGDBO9yLKq+07GyL6nqfui5PQGhsLR5TfWHXHBv2saPfW4HYtr5pZSfNg1XXhnIcE3DZca05w8iBiIZGTMMoBudASDe+wqmfOEiFoNXFx2rCzf4a/U/e1bzXatvjHwyYBY1kcyyt2xUg6Ziq3c2F9I3sLm/aA+FoEkyuA0KTeitQnFQZIkK69wNf+Dg/6MP/AIiuQtXZODJbCQD+5g/+sVo9G/E0wf2gNlp95+kky0F1ptxQGFapnPK0VcUFxTLigOKoYwpizil3FNOKXkFCaNIYo4oDimXpd6E0aSLvXleyVlBMYEKgphBQkFMxiiqIu5hEFMItDjFMIKMsVdo9g7gAjoxOwP2ehrrGCx3bR3Xy6jw8q5XhB3R+8fyWtvgsdJEbo1vLcH3UOtR2wLbp7D4zqHN9DaWziLuK1cUZJqMnMDOCGjHqG60/hsfCF0I6a31+FBVGQaQ74ilWbJ8ueUdBEUWZgT5Dck7AUxwnGugLSpnXqU3S/Qqfa9d9Nq0M3GC9gguL90m++16LgzILuWOnZgWNrEkdKk0CV7W+CGPVao2LkDyyF8766cNOEe5jxcEyXjcMNLFdeh3HT0PhVRx4zKVjswXViQB3ugFzbTf3VvMdDGyBtRISczDfUHf7R06/Gg4PhRkBhXVSCCeh8SaYpWp09Tlx9+UzcVVNbEhgASdnIesofzeCJDNKsje0RdwWcjU/V318etdQ4YyYjhwhEZRilszbjrfXUHr43rXRcrpLxRO1sY4kQxqDbTa7jrdgxt/+DoAwKKNABbaufqVDWc7gMufv78s+ww2GamDc3JyPDwnI+YOBwYaHfcH12rmHF5xFJ2am4jCJ6Mo79/POX1867hzfwpcbMIA2WwZidSO7YmM22zC9jXCOO8LxEeIZJY3EpYkpkOYsdTZetM1KVIUwAM4DD0rVH4E2HDKHw+IWZgXAJ0318q6ZypiMXhYmjKKUYZo72Vl2upy2YggG3W9thrXKMEqwOrSuLqQezSztodnb2U28yPs11h/lGw74MQCM5skSAmTM3cN1vdbWvfY0NKI1US9ROrNwxAtu+mWkqXFeOyZ3bFKkjszExDUKSdne5tb7IufEqa0GKwzYwZo1CBLWW6pGoZrdwG27WBI6kXq5RossZmKQg3AUdjFmNgAS111N9emnpQ4cYwVo7IAdSciqRqBpbTwpjqg67QtBJi9ggEH0PzlO5a5VxXEc4wqB+zALXa1r6WHidq1vF9J3XYIezAP2YwEX32UGup4Lik+CDCKQq7+190dF/e6nw0G97aLiGAiZ+0MUR7TvkmNTdj7fT7QaglbTQWqDOeF+m1eGr5/Z8H/Ji/7a/wBKiOHQf8qI/wCGt/yqtoQMJQJK7fAto0HgiD/KKq6cvrIhaOBH7ypZYgSWYG1gB6a+Yq2KNAPuj8q0ejdX8PWc/wDtCcqX+XpBOKA4o70B605z6mAel3ph6A9VMZSLvS0lMvS0lCaNU4tJSz0zJS0lCaNpASVleSV5QTGRHUFMRigximYxR1ibmFjFMoKDGKYQUVYq5j+FHdH7zfktOqKUw3sj1b8lq38B5d+cRSFjka6qlwbjVSxtfqPHxqtSoqC7QC0Kld9lBc/Yeu7nNJHhyWCm63F9ulrg2pmPhrggOrICFJuGW4JA00ub+XnV0bl9TFGAFLqRmY3vlsVIBG9tNPWh8z4VzkcAsigDzGoN2+G/lS4xYYhRz9jvjj9FNTQu18rEDjxB7uU0WAwRJVVAY3GUC2ui2BPQWv8ACmZFZRke+YHUHoVCbdOtecu4lHxSxxupZe8QGBKrlXUgbXtVxn4ejMzG/eBB2Nr21F9joKHVxAR7HOEw/RzVqJK3GduRFvD7cJTlxBjFwAdRuL+P9Kb4RxCKFyzrbPY7306WF9BrTHYYft2w3aKrpCJTm3CMxGcDawP+xVbi1IvubUamUrKw85mYlcTgKlNjrnYW7rn58geJlqPMeC7ZiHC5e6SbKCfX/e1J8R58wSqQsgYg2sDfbzrnfMkbm5tYNmANj7Sk7kk7g+PSqxxBZBGs0saaAqgVcnaW2aQD6o+LbeJCGHpKQdoZgkEd35TqWxTuxVSADYg8QRrYz6K4MI5IVkygFhm8G1G5t1qrc/cnjH4eYQZBiCqKrs7ICAwLKxW9wRm0Itc9N64wOfeIIwYzE2OgIAX0sLeAq7r8rdoC7YdxIACylh3lNgr+NiTY+BK+NCZCDG1a4AtKpzJ8mk/DsMZXJmN4svZRltXGqsvS2VtRfpVVgjdWysCp8GBU/A1Y+dOeDxOJcNHG0cSyiWzuXOYKy2W50TvMbdKHy9BKbKHa2llJLL/KdKaw9MtA4mqKabTTY8FV2Ts9/ZI6WLab+elWrH8GOHw/a9x2GXZAtgSArm+rd4HyJt4al5QxWERmOLWMoSY0KplIKkAk5QNLjcefgbT5qxeHb6SAh21TNdmAQEWVhe2a+3lXqTEggaXOe7WZWyPjuLkabx4SuQ4R5Vd11yZbjVmYsbAADXx1raYDluafCfOLAIjNu2uXu309dR6mkMDxiSF84bT6yqFjzDexIXbardydM0sWKjfvd1HK65VMqyHKAdhZVPqT4UCpNTDi4lL4lwqSGxIuCbA+Z2rc8p8DIxvZYvD2vFIwVwGBsyi/51tRw2SThySsw7wUW1zZlJHh938ataYb/wBQSQ9IHHxkBoTGNIOM5dJKcNiZjGtipxKxgX7uZyl1HkCFA9fCrfgcAcRGVLhMgzX07xbTW1tNu96+NI8VCTYmVI4i8omjBKgvkiz5nk2sBZQL73NeW7rShiq5ly2JBewOxGlrtceAJp3BgkNsmxyztfju53t890yelGQMhcEqA1xe17238BYnjoN8ljuAYiNcxGYX+qbn1ta9q0cgsbHSrAnG5hYPZlG2mQefrWv5k4xdY40sXkYHUA5IksZWB6dFHm1N9bXpkCotwTa4+36TMGFwlZWahUIIBJVhnYDj+vhNQ9LvRpDQHNMmJpASUtJRpDS8hobRtBF5KWejyGlpDQGjaCBkNeV5IayhGNAZTZR0xHQI6ZjphYg8OlMx0slMx0YRR4vhuMXnGGPZxP2pUGQsVNwpQ91dM2lteoro3Lz4iOCfNOG/Y5ezhKZNWDEFmNyRboPZ61ybm3CaJOtx9RiLgg6tG3rowv5LXSeSeL/PMCzm2cZY3F/rpqTbwNw3vpG+0zU6mZuLd1xNJqYRKdegAAQQcrna2Txvv5fWWsLnwcTPJKCkqSMRIVZrSn2slrjvezsbdajzU1p4zGSjoGubEmzEED/KazAFWWJWbrH3dfqvK343/D0oPMNziCWFlIGU+ICj9TXqdFRWtb8XPu113ya+IqHC3B/ALg2N8yT2dL5DK2p4yXCMdKcRGHlZhqLbA6HcVZMXj1UvHuyoWt+n4iqrwqMdspAtlIuSbaBht/Sn+I8QgjlZ5po4z2du+6pfTXQmq4hENQXGQHdv+09gq1VaJzuS2pJOVuJ5iBkjjlllXbPh5YbgBXCFNQre69c04bwLimBlRIGGLw2Yd2S7NGtxe1tgFG6kj7oq3DmbAx3viA5IIGRGfcW3At+NOcoczYfvgLI2uhyrb8DptVXamgLK2eWmvvv84OjRxNZkp1E7BLE3FwNCOYPAgi19LZSt4lEW7YgWLABUbTLcg3Ym2twO6LE6joba3E4Tts2a2YXVgQbiw6DoLW8unStt8ouLMz3w0EV9u0kdlI1vtG4IYECzDUW0rQcLaSOykQ5cpBP0zSBrWUq7PcLtprtvtaEeozbQXM68+HIH5EZHSFr4ajSWyuABoLgkb92Z10yIzN+NS4vw3Xura3vv51qYY3Rww3FxY6qQRZlI8CCQR510jHTqFXtIUkPdzZe0QfW1JB220t9bc0jxbDw6PHhtcuoLsQCPMON/TxqKlVM8iLDMEacNIWhiGVQCQeFjrK7hOCZmBjBKPcr1K+KHzFxr1BB61aocKMMmQftH0HiNLt6WG50tcdTpZ+UZjgYyZ8NEe2WNkEUrN3ToC7P7J32089a5lzHxlWxckcUSZFkNs2ctmsAQLPYLpsBbeh1ardX2cgfny5c4Tqusq2qG5GezwtvPHuyl65T4auIxCWkTRlcro2iWOTL0GqgDwJq9YvlKKQEKSoaTM63OUoWuyAXstr6EbWHpVD+SzCYhZxPJEI0Y5R9CqXBK6kkZr6391db7U+Hh0A3Uf1qgqnZFhYbpOHwy57Rub6zQcL5HigmSRQJFySCQShZB3lAGUWGt779L0xwflkYNGXOJJJb55MjJmN3IJBYgWz20tT39tdniexkAVBh5JlYNe4jZA4K5dCt/HrWm5v5klw8vZxxCa/af/MsZj0UC4sb3Nz0oRYkzSVVUZTZyYFfmwjLZQjnW2pCyMBpcC50rTYydVZw3tXcjvG9ibi3uI8q1uFxcksIkmIS5kBy/SW7wYHMNr5iLb92/WtzxPiyIYjpECki3IuEctqpF9L5QfdQ8FiKjYh6YUWHPXxAy5jX1mn0lTwodnGlt4zHvjuzOk1HBpI44ZDnYdtI2Z+zzv2feIAXcqWYnf6xpHFzgo8cfeQEENlsQOl7EgC/Typ3B4gocufMFzZLIAWspv3tNPzrW/OvoWjXS5BJ8Quij8a3KOGQWuL2IPjc56DTQbswJy9XparUVrELtBlNgD2SBdcy2u8ixyvwgRJlte2i33203PxvWiwzmVmxB+tZY/KIE5f5iS3vFNcVkLARAm8vtHr2a2Ehv53C/xHwqLWGg0tRz2qnJfqdfIH5mKD+FQtvfPuUHL/0RfuVd0FIaXkNEc0CQ1cyEEBIaWkNFkalpDQWjdMQMhpeQ0WQ0rIaA0cQQbmsobmvKCTGQs3UdMx0tGaYQ02szXjKUylKxmmENGEUcQuIw4mjeJtA6nU9H3RvQMFPuqscp8wNgZWJVmV1yugIBzL7J16gkj3nwq0oanHCmYtkW53OTWgVsOzurobERnDY1KVJ6VRSynhu4927SQXnTHMbYbCEW2ZyxH5KOvjXkuN4ziDmeSLDlt7IFP5MPxp6Pyo6mp/dnbNqh8AB94FukaaC1Ogo/uJb5G0VwvK2JnR5J8fMyi1wHZQSegBYj8KLg+V8IguUd/MyZdf4dKtXLLKyOhuSctxboL6/n+FMcRkQJkZrEbKBoPC9DWhSFQqVv3kmWrY3FGgHSoEFjkABnfzGVrWmi5ZihV3LwRDJmIsi5gvruas3FcHnyPGota+nd0sCLAe+qXxyWXCL2y2yygqQTqC1wxt4X199bjl7jzIEExLRlUEZAvlsLEG50rPRzh6xGtifflOjxGGTpLBBrW2wptwOu/mLc5S+IzSxSyxyKyfSSsoYEGxc2K33HnQ48TXT+L4LD4xfm8oAJUvGw9pTtdfw061QJOSeII9silczLnzjLYbMRuAfS9P08SDrMWr0f1YAUZRybDtIokUWJ3BOvr/pShUJJZnUZRmF7XJ+zroP9BVuk4EETM7m+g7q2Av63pDiHBMK7BwrsbC/ftseoFulEaupFgYhQw1ZT21FuGs0vB8G8j9qxGRMwB6MbG4T4k32v41vH4TlnVEwyh3AbMIwWYNY3LW1/0rYJhlKgKAFFgANgK2jcQxIiEMTKNMocrdlHgp8aWrVr7ppYTBBmu2XC3v3wMqI43bGiPMQFI63BswzXHWuh8NfPeQm+i63uL5d/gL++qPxLkKQmGWBh2mc5yb5QpU6+J1/OrhwZ1hw8cchCuFBcDUByO8L+W3urOLlnN50vVU6dEbB5Ta4w2icjKDkcAtYC5GgudBrbeud8y4fGGU49Zh2UGWSaPtO0kdI+8VGWyXKi1tPM1fpJ0ljZQ/S+m4ykH9K47zvxiU4mSNZGRVPZEByquBe+ZQ2u9tthUuNqiUBsT9O+B2qgcAAW1vzHL8pvOL8TkaBOJQXSPKB83eIuzFnC5iqtoRf/AHameEzNiYRnKyly5sFK5AScoMbEm+/rbSua8U5yxM2LixdokliVwmVTbXQ5gW13rZcp8zySYkJIIwJM5LIuR2Ym47Q3OaxBAvtmoHRtBMPTZm+M3ytu3A2yPfz3ACC6Rw4rurUhbMXINjzI4E5DLPde15b8PxWODFSCSSxGdYjZrXvaxa3t636LY70COI94E2sPGw30v5DX4GtXzBg7jTdbD3W+j/ygp/h0jhMW8sfZsb5r3YnvdkNHBPncLf7x8K2sNiTsG+ZyA9PWY2PwA64WyTNjyB+IjmMgB3CNxNnZpvtWCeUQvkHvuW/i8q8kapu1Lu1PKuytvd98yaj9a5e1uA4DcPAZSEjUrI1EkalZGqpMMiyMjUrI1EkalpGoLGOIsHI1KyNRJGpeRqAxjiLByNWUJ2rKCTGQs38ZphDSiGmUNOrMpxGozTCGlENMI1GEVcRtDR0NKIaOjVeKuIypoyGlkaiq1Xi7CPQTshupKnyNq2TcTL2zoCw0zWsffWlVqKrV7ZBNzBlmAIByMlzBAcTCb6suq+4aqPdWk4Bjs8TYdmswN4yfxXzv/SrBHJVW5jwXZSdrHpfX3m9xWR0phyLVV7j6fY+E6j9l8dm2EqnXtL/sP9h/lCYbmOaLEK0pvk7oGug6710nh/OeEeMksARbQ67mxPurkZnXED+86j7XnbxpKCWSJw6GxHkCPQg6EeRrKFQ6idVUoKey/gZ9DQmKRL3DhveDXn9kRE3C2PkSK5dw7n1jF2MoSFtLPlbL62v3T+FXngvMiuACwJ018fSiddaKnB8puTwdL3FHj4agHsj4a1KDHKetMieoNW88tDZ3SJgYIQm9jluba20udf1qg8b41PgkeXEcPlWKP2pRi8OyWJABH1jckaWvrtXQjiNK4F8tHOIxMwwEDXjha8pB0eUaZPMLr7yfCqq26XZMrmbZvlZweUhYJUJ69ojW/hsL/EVVuIcf4bPI8jjEZnYubPGACb3sDe2561RLUNjRLwdpcFx3Cb3IxO9/bj61tOCrw5mEsEGLkMbKbh4hY3DC9z5Vzmrp8nU1jMviI2+GYH8xRaFMVKgQ7/tFsZWehRaoguRbXvAl5xPFFmjdBh5omK2DySRWBBuNFuTrWtwcRRSWsGO9uijp8ST76Yd6C71rUsJTpNtC575zdfpGtiEKMAByv6k8vKY70u71670vI9HJiyJIyPS0jV7I9LSPQmaOIk8kal5Hr2R6XkegMY2iyMjUrI1TkalnagMY2iyLtWUJ2rKEWjIWWRDR0alEajI1PKZkMsdRqOjUmjUZGoqmKsscRqOrUkjUdGooMXZY4jUZWpJWoyvV7xdljatRVelFepq9WvAskdV6rPPnFjEkSKAxZ3YhhcZQAPUav+Fb1Xqgc/z5sUq/ZiT4ksT+lK442oEcbCP9D0r4xDwufkR6zzhmOwxYGRmhbzBKb/aXUe8Ct1i8TG3fjZJBs2VgbH3VRCKPhcQ8TZkNj10BBHgQd6540hundjEN/wBp0HBcHGIGlvMUzhuCYjDd6M6fZNyD/Q+Yqo8P50nhNskbL4AGM/EE/lVt4b8okEllkUwnT2u8l/3h+oFBNNxGRiKZyE3OG4/JF+0V1G1/aA9SNfwqzYHmeNgO9c+Rqk8W5xwUa6yCYkezEA/xPsj43qlcR5zka4w8a4cfa/aP7iRZfh76haZO609UqoNZ2Dn3m/5lgWKsBNKCkIvqCdGk9FBv4XsOtfO5Pvo+LxkszZ5ZHla1ruxcgakAX2Gp086BTKJsiIu20Z4TXlq9rxqtKyJqxcjy5cUfvRuPfdT+hquVtuV2ti4/POPijUXDtaqp5xbGpt4dxyP0nRnel3eoPJQHkrdLTk1pyTvS7vXjyUu8lCZo0iSUj0s71jyUs70FmjSJPZHpaR6x3oDvQGaNoki7UB2r13oDtQWaNKsi7V7QWasoRaHCyzpR0rKytBZivDpRkNZWUYRZoZKMprKyiCAaGU0Vaysq4i7Qi0RTWVlXECYQVzfmtycbLfoUA9Mi17WUl0h/KHf6Ga3Qn89v7T9RNWalWVlY86eDNe1lZUz08qJrKyvSJ7XhrKyokyNeGsrKkz0jWx4F/wC5j/fH5GsrKmn8a94+sFX/AJTdx+kvDmgOa9rK2zOXWLOaA9ZWUIxpIu5oD17WUExlIu9LvWVlAaNJAPQXrKyhNGVgjWVlZQjDCf/Z" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*EndAbout*-->
+
+    <!--* Portfolio*-->
+    <section id="mt_portfolio" class="">
+        <div class="container">
+
+        	<!-- section title -->
+        	<div class="section_heading">
+        		<div class="row">
+	        		<div class="col-sm-8">
+	        			<div class="mt_heading">
+			                <h2 class="section_title">
+			                    <span>Fascinating projects for our clients</span>
+			                </h2>
+			                <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable 
+			                dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+			            </div>
+	        		</div>
+	        		<div class="col-sm-4">
+	        			<div class="button pull-right">
+	        				<a href="#" class="mt_btn_blue mg-2">Learn More</a>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mt_filter">
+                        <ul class="list-inline text-center filter">
+                            <li class="active">
+                                <a href="#" data-filter="*">All</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".marketing">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".webdesign">Design</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".webdevelopment">Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio_row">
+                <div class="isotopeContainer">
+                    {%  for img in index_image %}
+                    <div class="portfolio_grid no-padding isotopeSelector webdesign grid-item">
+                        <div class="hovereffect-portfolio">
+                            <img src="{{ img.img.url }}" alt="" class="img-responsive center-block" />
+                            <div class="overlayPort">
+                                <ul class="info text-center list-inline">
+                                    <li>
+                                        <a href="{% url 'portfolio_detail' %}">
+                                            <h4>Project List</h4>
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Portfolio*-->
+
+    <!--*Team*-->
+    <section id="mt_team">
+        <div class="container">
+        	<!-- section title -->
+        	<div class="section_heading">
+        		<div class="row">
+	        		<div class="col-sm-8">
+	        			<div class="mt_heading">
+			                <h2 class="section_title">
+			                    <span>let's introduce with our team</span>
+			                </h2>
+			                <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable 
+			                dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+			            </div>
+	        		</div>
+	        		<div class="col-sm-4">
+	        			<div class="button pull-right">
+	        				<a href="#" class="mt_btn_blue mg-2">Learn More</a>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+            <div class="row">
+                <div class="owl-carousel">
+                    {% for iden in inde_x %}
+                    <div class="item">
+                        <div class="col-md-12">
+                            <div class="team_member">
+                                <figure class="effect-julia">
+                                    <img src="{{iden.img.url}}" alt="">
+
+                                </figure>
+                                <div class="member_name">
+                                    <h3>{{iden.name}}</h3>
+                                    <span>{{iden.title}}</span>
+                                    <p>{{iden.category}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Team*-->
+
+    <!--* Fun And Facts*-->
+    <section id="mt_fun">
+        <div class="container">
+            <!-- section title -->
+            <div class="section_heading title-padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="mt_heading text-center">
+                            <h2 class="section_title">
+                                <span>We Are Help You To Grow Your Business</span>
+                            </h2>
+                            <p class="heading_txt">We are here to Acelerate your business and help you find the way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row facts_row">
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <p class="fun-facts_figure timer" data-to="15" data-speed="3000"></p>
+                        <p class="fun-facts_title"> Years of Experience </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <p class="fun-facts_figure timer" data-to="520" data-speed="3000"></p>
+                        <p class="fun-facts_title"> Happy Clients </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <p class="fun-facts_figure timer" data-to="850" data-speed="3000"></p>
+                        <p class="fun-facts_title"> Projects Completed </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <p class="fun-facts_figure timer" data-to="950" data-speed="3000"></p>
+                        <p class="fun-facts_title"> Comments </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Fun And Facts*-->
+
+    <!--* Mission Area*-->
+    <section class="mission-area section-padding"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="mission-content">
+                        <h3>Our mission</h3>
+                        <h2>Our Mission is to Turn Your Ideas Into Business.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="mission-progress-bar">
+                        <div class="progress-wrap">
+                            <h5>Design</h5>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span class="bar-width">85%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h5>Market Research</h5>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <span class="bar-width">60%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h5>Strategic Consultingh</h5>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <span class="bar-width">90%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h5>Sales Services</h5>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <span class="bar-width">75%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h5>Online Reputation</h5>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <span class="bar-width">80%</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Mission Area*-->
+
+    <!--* Testimonial*-->
+    <section id="mt_testimonial">
+        <div class="container">
+        	<!-- section title -->
+        	<div class="section_heading">
+        		<div class="row">
+	        		<div class="col-sm-8">
+	        			<div class="mt_heading">
+			                <h2 class="section_title">
+			                    <span>What Say Our Client</span>
+			                </h2>
+			                <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable 
+			                dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+			            </div>
+	        		</div>
+	        		<div class="col-sm-4">
+	        			<div class="button pull-right">
+	        				<a href="#" class="mt_btn_blue mg-2">Learn More</a>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel">
+                        {% for baner in index_banner %}
+                        <div class="item">
+                            <div class="testimonial_main">
+                                <div class="col-xs-12">
+                                    <img src="{{baner.image.url}}" alt="">
+                                    <p>{{baner.category}}</p>
+                                    <h4><a href="#">{{baner.name}}</a></h4>
+                                    <span>{{baner.title}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* EndTestimonial*-->
+
+    <!--* Blog*-->
+    <section id="mt_blog" class="light-bg">
+        <div class="container">
+        	<!-- section title -->
+        	<div class="section_heading">
+        		<div class="row">
+	        		<div class="col-sm-8">
+	        			<div class="mt_heading">
+			                <h2 class="section_title">
+			                    <span>Our fresh blog posts</span>
+			                </h2>
+			                <p class="heading_txt">There are variations available majoritaey suffered alteration words which look believable
+			                dolor sit amet consectetuer adipiscing elit suspendisse justdo structure versions.</p>
+			            </div>
+	        		</div>
+	        		<div class="col-sm-4">
+	        			<div class="button pull-right">
+	        				<a href="#" class="mt_btn_blue mg-2">Learn More</a>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+            <div class="row blog_post_sec">
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <div class="blog-post_wrapper">
+                        <div class="blog-post-inner_wrapper">
+                            <div class="blog-post-image">
+                                <div class="clearfix">
+                                    <div class="img">
+                                        <img src="{% static 'images/blog-listing/blog_09.jpg' %}" alt="image" class="img-responsive center-block post_img" /> </div>
+                                </div>
+                            </div>
+                            <div class="post-detail_container">
+                                <div class="post-content">
+                                    <p class="cats"><a href="" class="green">Travel</a></p>
+                                    <h3 class="post-title entry-title">
+                                        <a href="blog-details.html">It is a long established fact </a>
+                                    </h3>
+                                    <ul class="list-unstyled list-inline post-metadata">
+                                        <li>
+                                            <i class="ion-ios-stopwatch-outline"></i> Mon, 04-09-2018&nbsp;&nbsp;| </li>
+                                        <li>
+                                            <i class="ion-ios-chatbubble-outline"></i>&nbsp;
+                                            <a href="#">Comments(5)</a>
+                                        </li>
+                                    </ul>
+                                    <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+                                    <div class="view_detail">
+                                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <div class="blog-post_wrapper">
+                        <div class="blog-post-inner_wrapper">
+                            <div class="blog-post-image">
+                                <div class="clearfix">
+                                    <div class="img">
+                                        <img src="{% static 'images/blog-listing/blog_08.jpg' %}" alt="image" class="img-responsive center-block post_img" /> </div>
+                                </div>
+                            </div>
+                            <div class="post-detail_container">
+                                <div class="post-content">
+                                    <p class="cats"><a href="" class="orange">Fashion</a></p>
+                                    <h3 class="post-title entry-title">
+                                        <a href="blog-details.html">It is a long established fact</a>
+                                    </h3>
+                                    <ul class="list-unstyled list-inline post-metadata">
+                                        <li>
+                                            <i class="ion-ios-stopwatch-outline"></i> Tues, 04-15-2018&nbsp;&nbsp;| </li>
+                                        <li>
+                                            <i class="ion-ios-chatbubble-outline"></i>&nbsp;
+                                            <a href="#">Comments(2)</a>
+                                        </li>
+                                    </ul>
+                                    <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+                                    <div class="view_detail">
+                                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 grid-item">
+                    <div class="blog-post_wrapper">
+                        <div class="blog-post-inner_wrapper">
+                            <div class="blog-post-image">
+                                <div class="clearfix">
+                                    <div class="img">
+                                        <img src="{% static 'images/blog-listing/blog_07.jpg' %}" alt="image" class="img-responsive center-block post_img" /> </div>
+                                </div>
+                            </div>
+                            <div class="post-detail_container">
+                                <div class="post-content">
+                                    <p class="cats"><a href="">Business</a></p>
+                                    <h3 class="post-title entry-title">
+                                        <a href="blog-details.html">It is a long established fact</a>
+                                    </h3>
+                                    <ul class="list-unstyled list-inline post-metadata">
+                                        <li>
+                                            <i class="ion-ios-stopwatch-outline"></i> Thur, 03-18-2018&nbsp;&nbsp;| </li>
+                                        <li>
+                                            <i class="ion-ios-chatbubble-outline"></i>&nbsp;
+                                            <a href="#">Comments(1)</a>
+                                        </li>
+                                    </ul>
+                                    <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+                                    <div class="view_detail">
+                                        <a href="{% url 'blog_detail' %}" class="mt_btn_blue">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Blog*-->
+
+    <!--=* Get Started Section*=-->
+    <section id="mt_get_started">
+        <div class="container">
+            <div class="watch_content">
+                <h1>starcross</h1>
+                <h2>Suitable For Business, Startup Website</h2>
+                <p>To develop a financial strategy for your future, it's important for your financial professional to see a complete, 360-degree view of your financial picture, including how your retirement assets are intadfegrated and work with one another. Our financial strategies and asset management servsdfsdfadsices use insurance products, such as annuities, to help you.</p>
+                <a href="#" class="mt_btn_blue">Buy This Template</a>
+            </div>
+        </div>
+        <div class="blue-overlay"></div>
+    </section>
+    <!--* End Get Started Section*-->
+
+    <!--* Contact*-->
+    <section id="mt_contact">
+        <div class="container">
+        	<!-- section title -->
+        	<div class="section_heading title-padding">
+        		<div class="row">
+	        		<div class="col-xs-12">
+	        			<div class="mt_heading text-center">
+			                <h2 class="section_title">
+			                    <span>We are always ahead Professional Solutions for Your</span>
+			                </h2>
+			                <p class="heading_txt">Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.</p>
+			            </div>
+	        		</div>
+	        	</div>
+        	</div>
+
+            <!-- Contact Us Map -->   
+            <div class="map">
+                <div id="map" style="height: 300px; width: 100%;"></div>
+            </div>
+            <!-- section -->
+
+            <div class="contact-info">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Uzbekistan </li>
+                    <li><i class="fa fa-phone"></i> +998-50-005-54-65</li>
+                    <li><i class="fa fa-envelope"></i> xayrullohyusupov@gmail.com</li>
+                    <li><i class="fa fa-globe"></i> www.starcross.com</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="contact-inner">
+                        <div class="contact_form">
+                                <form id="contact_form" method="post" action="{% url 'index' %}">
+                                    {% csrf_token %}
+                                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                                    <textarea  name="message" id="message" placeholder="Your message"></textarea>
+                                    <button type="submit" class="mt_btn_blue" id="submit-btn">SEND MESSAGE
+                                        <span class="mt_load">
+                                            <span></span>
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                    </div>   
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!--* End Contact*-->
+
+    <!--*Footer*-->
+    <footer id="mt_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="follow_us">
+                        <a href="index.html">
+                            <img src="{% static 'images/logo.png' %}" alt="Logo">
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <h4>Follow Us on</h4>
+                        <ul class="social_icons">
+                            
+                            <li>
+                                <a href="https://www.facebook.com/photo/?fbid=1057719504733455&set=a.185284915310256">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/?lang=en">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://uz.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="mt_contact_ftr">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-quick-links-4">
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="mt_post_ftr">
+                        <h3>Latest Posts</h3>
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-1.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Unde omnis iste natus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-8.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Aenean a mi et risus facilisis</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-5.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibuss</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-7.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                       <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mt_footer_copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copy_txt">
+                            <p>&copy; Copyright 2018 - starcross All rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="made_txt">
+                            <p>Made With <a href="https://cyclonethemes.com/" target="_blank">Cyclone Themes</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--* End Footer*-->
+
+    <!-- back to top -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-placement="left">
+        <span class="fa fa-arrow-up"></span>
+    </a>
+
+    <!--*Scripts*-->
+
+    <!-- Latest jquery --><script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+    <!-- latest Bootstrap --><script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Parallax jquery --><script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+    
+    <!-- Fancybox jquery --><script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+
+    <!-- Swiper slider jquery --><script src="{% static 'js/swiper.js' %}"></script>
+
+    <!-- wow animated jquery --><script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!-- Navigation jquery --><script src="{% static 'js/jquery.nav.js' %}"></script>
+
+    <!-- Slick jquery --><script src="{% static 'js/slick.js' %}"></script>
+
+    <!-- Owl Carousel Jquery --><script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- Easing Jquery --><script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <!-- Appear Jquery --><script src="{% static 'js/jquery.appear.js' %}"></script>
+
+    <!-- isotope Jquery --><script src="{% static 'js/isotope.min.js' %}"></script>
+
+    <!-- CountTo Jquery --><script src="{% static 'js/jquery.countTo.js' %}"></script>
+
+    <!-- main default Jquery --><script src="{% static 'js/main.js' %}"></script>
+
+    <!-- map Jquery --><script src="{% static 'js/custom-map.js' %}"></script>
+
+    <!-- google map Jquery -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4JwWo5VPt9WyNp3Ne2uc2FMGEePHpqJ8&amp;callback=initMap" async defer></script>
+
+</body>
+
+</html>

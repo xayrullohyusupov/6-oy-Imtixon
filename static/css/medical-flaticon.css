@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/mFlaticon.eot");
+  src: url("../fonts/mFlaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/mFlaticon.woff") format("woff"),
+       url("../fonts/mFlaticon.ttf") format("truetype"),
+       url("../fonts/mFlaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}
+
+.flaticon-001-handshake:before {
+	content: "\e001";
+}
+.flaticon-002-doctor:before {
+	content: "\e002";
+}
+.flaticon-003-settings:before {
+	content: "\e003";
+}
+.flaticon-004-multiple-users-silhouette:before {
+	content: "\e004";
+}
+.flaticon-005-hospital-buildings:before {
+	content: "\e005";
+}
+.flaticon-006-tooth:before {
+	content: "\e006";
+}
+.flaticon-007-stethoscope:before {
+	content: "\e007";
+}
+.flaticon-008-dna:before {
+	content: "\e008";
+}

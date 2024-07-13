@@ -1,0 +1,1174 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Starcross is a creative agency html template">
+
+    <title>StarCross - Creative Agency HTML Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Default CSS-->
+    <link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Custom CSS-->
+    <link href="{% static 'css/education.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Plugin CSS-->
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/modal-video-min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/plugin.css' %}" rel="stylesheet" type="text/css">
+
+    <!--Font Icons-->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/flaticon1.css' %}" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="education">
+    <!--PRELOADER-->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <div id="top"></div>
+
+    <!--*Header*-->
+    <header id="inner-navigation">
+
+        <!-- top bar -->
+        <div class="topbar-section">
+            <div class="container">
+                <div class="topbar-inner">
+                    <div class="top-bar-left pull-left">
+                   <ul>
+                       <li><i class="fa fa-phone"></i> Phone: +01-123456789</li>
+                       <li><i class="fa fa-envelope"></i> Email: info@sitename.com</li>
+                   </ul>
+                    </div>
+              
+                    <div class="top-bar-right pull-right">
+                        <a class="mt_btn_white-edu" href="#">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+
+            <div class="container">
+
+                <div class="logo pull-left">
+                    <a href="index.html"><img  class="logo-img" src="{% static 'images/e-logo.png' %}" alt=""></a>
+                </div>
+                
+                <div id="navbar" class="navbar-nav-wrapper pull-right">
+                    <ul class="nav navbar-nav navbar-right" id="responsive-menu">
+                        <li  class="active">
+                            <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="index.html">Home Slider</a>
+                                    <ul>
+                                       <li><a href="index.html">Home Slider</a></li> 
+                                       <li><a href="index-03.html">Home slider 1</a></li>
+                                       <li><a href="index-04.html">Home slider 2</a></li>
+                                       <li><a href="index-05.html">Home slider 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index-01.html">Home Banner</a></li>
+                                <li><a href="index-02.html">Home Video</a></li>
+                                <li><a href="index-06.html">Home Style 1</a></li>
+                                <li><a href="index-07.html">Home Style 2</a></li>
+                                <li><a href="index-construction.html">Construction</a></li>
+                                <li><a href="index-realestate.html">Real Estate</a></li>
+                                <li><a href="index-apps.html">Mobile Apps</a></li>
+                                <li><a href="index-medical.html">Medical</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="team.html">Team</a>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="blog-listing-left.html">Blog left Sidebar</a></li>
+                                <li><a href="blog-listing.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-listing.html">Blog List</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="header-search">
+                                <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+                                <div class="search-box-wrap" style="display: none;">
+                                    <div class="searchform" role="search">
+                                        <form class="search-form" method="get" action=".">
+                                            <input type="text" name="s" id="s" placeholder="Search..." value="" class="search-field">
+                                            <input type="submit" class="search-submit" value="Search">
+                                        </form>
+                                    </div><!-- .searchform -->
+                                </div><!-- .search-box-wrap -->
+                            </div>
+                        </li>
+                    </ul>
+            
+                </div><!--/.nav-collapse -->
+            </div>
+            
+            <div id="slicknav-mobile"></div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!--* End Header*-->
+
+    <!-- Slider -->
+    <div id="home-banner" class="carousel slide ps_indicators_l  ps_control_rotate_f kbrns_zoomInOut thumb_scroll_x swipe_x ps_easeOutQuart" data-ride="carousel" data-pause="hover" data-interval="10000" data-duration="2000">
+
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- First Slide -->
+            <div class="item active">
+                <!-- Slide Background -->
+                <img src="{% static 'images/education/slide-1.jpg' %}" alt="slider_01" />
+                <!-- Left Slide Text Layer -->
+                <div class="caption_slide1 fadeInRight" data-animation="animated fadeInRight">
+                    <h1 class="white">Explore the World of Our Graduates</h1>
+                </div><!-- /Left Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+            <!-- Second Slide -->
+            <div class="item">
+                <!-- Slide Background -->
+                <img src="{% static 'images/education/slide-2.jpg' %}" alt="slider_02" />
+                <!-- Right Slide Text Layer -->
+                <div class="caption_slide1 caption_slide1_right wow fadeInLeft" data-animation="animated fadeInLeft">
+                     <h1 class="white">Better education for a better world</h1>
+                </div><!-- /Right Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+            <!-- Third Slide -->
+            <div class="item">
+                <!-- Slide Background -->
+                <img src="{% static 'images/education/slide-4.jpg' %}" alt="slider_04" />
+                <!-- Center Slide Text Layer -->
+                <div class="caption_slide1 caption_slide1_center cap-new wow fadeInDown" data-animation="animated fadeInDown">
+                     <h1 class="white">Exceptional People, Exceptional Care</h1>
+                </div><!-- /Center Slide Text Layer -->
+            </div><!-- /item -->
+            <!-- End of Slide -->
+
+        </div><!-- End of Wrapper For Slides -->
+
+        <!-- Left Control -->
+        <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- Right Control -->
+        <a class="right carousel-control" href="#home-banner" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div> <!-- End Slider -->
+
+    <!-- About Courses -->
+    <div class="edu-courses">
+        <div class="container">
+            <div class="panel-grid-banner">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="inner-grid">                        
+                        <div class="text-courses">
+                            <i class="flaticon-multiple-users-silhouette"></i>
+                            <h3>LEARN COURSES ONLINE</h3>
+                        </div>
+                        <div class="courses-content">
+                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+                            <a class="mt_btn_yellow" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="inner-grid">                        
+                        <div class="text-courses">
+                            <i class="flaticon-multiple-users-silhouette"></i>
+                            <h3>Highly Qualified Teachers</h3>
+                        </div>
+                        <div class="courses-content">
+                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+                            <a class="mt_btn_yellow" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="inner-grid">                        
+                        <div class="text-courses">
+                            <i class="flaticon-multiple-users-silhouette"></i>
+                            <h3>Book Library & Stores</h3>
+                        </div>
+                        <div class="courses-content">
+                            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+                            <a class="mt_btn_yellow" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Courses -->
+
+    <!--*About*-->
+    <section id="mt_about">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title">
+                        <span>Welcome to Starcross</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="about_services">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="about-items">
+                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet. Morbi accumsan ipsum velit.</p>
+                            <a href="#" class="mt_btn_yellow mar-top-25">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="about-form-items">
+                            <div class="about-sch-form">
+                                <div class="event-title">
+                                    <h2>Apply for Scholarship</h2>
+                                </div> <!-- event title -->
+                                <form class="mar-top-60">
+                                    <div class="form-group mar-bottom-30">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group mar-bottom-30">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group mar-bottom-30">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Phone Number">
+                                    </div>
+                                    <button type="submit" class="mt_btn_yellow">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-edu-bg">
+                        <img src="{% static 'images/education/about.png' %}" alt="About">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*EndAbout*-->
+
+    <!--* Fun And Facts*-->
+    <section id="mt_fun">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <div class="row facts_row">
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="fa fa-trophy white"></i>
+                        <p class="fun-facts_figure timer white" data-to="275" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> AWARDS </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="fa fa-graduation-cap white"></i>
+                        <p class="fun-facts_figure timer white" data-to="3282" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> STUDENTS </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="fa fa-university white"></i>
+                        <p class="fun-facts_figure timer white" data-to="120" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> YEARS OF HISTORY </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 facts_col">
+                    <div class="fun-facts_wrapper">
+                        <i class="fa fa-book white"></i>
+                        <p class="fun-facts_figure timer white" data-to="350" data-speed="3000"></p>
+                        <span class="fun-facts_title white"> TEACHERS </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Fun And Facts*-->
+
+    <!--*Features-one*-->
+    <section class="features-one">
+		<div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title">
+                        <span>Featured Courses</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row slider-ft-course">
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="featured-item">
+                        <div class="feat-img">
+                            <img src="{% static 'images/education/ft-1.jpg' %}">
+                            <div class="th-name">
+                                <img src="{% static 'images/blog/cmnt-1.jpg' %}">
+                                <h5>Mark Ronson</h5>
+                            </div>
+                            <div class="overlayPort">
+                                <ul class="info text-center list-inline">
+                                    <li>
+                                        <a href="portfolio-detail.html">
+                                            <h4>View Detail</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feat-inn">
+                            <span>(20 Reviws)</span>
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <a href="#"><h3>Marketing Management from start for beginner</h3></a>
+                            <div class="course-feat">
+                                <div class="price-ft float-left">
+                                    <span>$90</span>
+                                </div>
+                                <div class="admin-ft float-right">
+                                    <ul>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-user"></i><span>31</span></a></li>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-heart"></i><span>10</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="featured-item">
+                        <div class="feat-img">
+                            <img src="{% static 'images/education/ft-2.jpg' %}">
+                            <div class="th-name">
+                                <img src="{% static 'images/blog/cmnt-2.jpg' %}">
+                                <h5>Mark Ronson</h5>
+                            </div>
+                            <div class="overlayPort">
+                                <ul class="info text-center list-inline">
+                                    <li>
+                                        <a href="portfolio-detail.html">
+                                            <h4>View Detail</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feat-inn">
+                            <span>(20 Reviws)</span>
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <a href="#"><h3>Marketing Management from start for beginner</h3></a>
+                            <div class="course-feat">
+                                <div class="price-ft float-left">
+                                    <span>$90</span>
+                                </div>
+                                <div class="admin-ft float-right">
+                                    <ul>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-user"></i><span>31</span></a></li>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-heart"></i><span>10</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="featured-item">
+                        <div class="feat-img">
+                            <img src="{% static 'images/education/ft-3.jpg' %}">
+                            <div class="th-name">
+                                <img src="{% static 'images/blog/cmnt-3.jpg' %}">
+                                <h5>Mark Ronson</h5>
+                            </div>
+                            <div class="overlayPort">
+                                <ul class="info text-center list-inline">
+                                    <li>
+                                        <a href="portfolio-detail.html">
+                                            <h4>View Detail</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feat-inn">
+                            <span>(20 Reviws)</span>
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <a href="#"><h3>Marketing Management from start for beginner</h3></a>
+                            <div class="course-feat">
+                                <div class="price-ft float-left">
+                                    <span>$90</span>
+                                </div>
+                                <div class="admin-ft float-right">
+                                    <ul>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-user"></i><span>31</span></a></li>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-heart"></i><span>10</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="featured-item">
+                        <div class="feat-img">
+                            <img src="{% static 'images/education/ft-4.jpg' %}">
+                            <div class="th-name">
+                                <img src="{% static 'images/blog/cmnt-1.jpg' %}">
+                                <h5>Mark Ronson</h5>
+                            </div>
+                            <div class="overlayPort">
+                                <ul class="info text-center list-inline">
+                                    <li>
+                                        <a href="portfolio-detail.html">
+                                            <h4>View Detail</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feat-inn">
+                            <span>(20 Reviws)</span>
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <a href="#"><h3>Marketing Management from start for beginner</h3></a>
+                            <div class="course-feat">
+                                <div class="price-ft float-left">
+                                    <span>$90</span>
+                                </div>
+                                <div class="admin-ft float-right">
+                                    <ul>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-user"></i><span>31</span></a></li>
+                                        <li><a href="#" tabindex="-1"><i class="fa fa-heart"></i><span>10</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+		</div><!-- /.container -->
+	</section>
+	<!--*EndFeatures-one*-->
+
+    <!-- Facilities -->
+    <section class="facility-area section-padding"> 
+        <div class="container">
+
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title">
+                        <span>Our Facilities</span>
+                    </h2>             
+                </div>
+            </div>
+
+            <div class="row ">                
+                <div class="col-lg-6 col-sm-8 col-xs-12  wow slideInLeft mission-list" style="visibility: visible; animation-name: slideInLeft;">
+                    <div class="facility-list">
+                        <i class="fa fa-book"></i>
+                        <h3>Books & Library</h3>
+                        <p>Dolor sit amet consectetuer adipiscing elit suspendisse justdo structure.</p>
+                    </div>
+                    <div class="facility-list">
+                        <i class="fa fa-laptop"></i>
+                        <h3>Online Support</h3>
+                        <p>Dolor sit amet consectetuer adipiscing elit suspendisse justdo structure.</p>
+                    </div>
+                    <div class="facility-list">
+                        <i class="fa fa-certificate"></i>
+                        <h3>Global Certificate</h3>
+                        <p>Dolor sit amet consectetuer adipiscing elit suspendisse justdo structure.</p>
+                    </div>
+                    <div class="facility-list">
+                        <i class="fa fa-support"></i>
+                        <h3>Alumni Support</h3>
+                        <p>Dolor sit amet consectetuer adipiscing elit suspendisse justdo structure.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-4 col-xs-12">
+                    <div class="pulses">
+                          <button type="button" class="play-btn js-video-button" data-video-id='176543782' data-channel="vimeo"><i class="fa fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Facilities -->
+
+    <!--Education Event-->
+	<section class="edu-events">
+		<div class="container wow slideInRight" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title">
+                        <span>Upcomming Events</span>
+                    </h2>             
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+                    <div class="event-style">
+                        <div class="col-lg-4 col-sm-4 col-xs-4 text-center">
+                            <div class="event-date">
+                                <h2>15 <span>January</span></h2>
+                                <div class="book-btn">
+                                    <a href="#" class="default-btn">Book a Seat</a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-8 col-sm-8 col-xs-8">
+                            <div class="event-details">
+                                <h3><a href="#">Start a blog site using wordpress.</a></h3>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>8:00 AM - 1:00 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>Royal National Park, Sydney</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard.</p>
+                            </div>
+                        </div>
+                    </div>
+				</div>	
+				<div class="col-md-6 col-sm-12">
+                    <div class="event-style">
+                        <div class="col-lg-4 col-sm-4 col-xs-4 text-center">
+                            <div class="event-date">
+                                <h2>15 <span>March</span></h2>
+                                <div class="book-btn">
+                                    <a href="#" class="default-btn">Book a Seat</a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-8 col-sm-8 col-xs-8">
+                            <div class="event-details">
+                                <h3><a href="#">Annual Meeting - 2019</a></h3>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>11:00 AM - 3:00 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>Royal National Park, Sydney</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-sm-12 pad-top-30">
+                    <div class="event-style">
+                        <div class="col-lg-4 col-sm-4 col-xs-4 text-center">
+                            <div class="event-date">
+                                <h2>15 <span>May</span></h2>
+                                <div class="book-btn">
+                                    <a href="#" class="default-btn">Book a Seat</a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-8 col-sm-8 col-xs-8">
+                            <div class="event-details">
+                                <h3><a href="#">Marketing Workshop - 2019</a></h3>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>6:00 AM - 10:00 AM</li>
+                                    <li><i class="fa fa-map-marker"></i>Royal National Park, Sydney</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard dummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-6 col-sm-12 pad-top-30">
+                    <div class="event-style">
+                        <div class="col-lg-4 col-sm-4 col-xs-4 text-center">
+                            <div class="event-date">
+                                <h2>15 <span>January</span></h2>
+                                <div class="book-btn">
+                                    <a href="#" class="default-btn">Book a Seat</a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-8 col-sm-8 col-xs-8">
+                            <div class="event-details">
+                                <h3><a href="#">How to create a new landing page</a></h3>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>5:00 AM - 9:00 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>Royal National Park, Sydney</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard dummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!--End Education Event-->
+
+    <section id="mt_get_started">
+        <div class="container">
+            <div class="row wow slideInDown" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: slideInDown;">
+                <div class="col-sm-9">
+                    <div class="watch_content">
+                        <h2 class="white">GET STARTED TODAY</h2>
+                        <p class="white">Lorem ipsums dolors sit amet consectetur adipiselo elit sed do eiused tempor the incididunt ut labore et. Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3"><a href="#" class="mt_btn_yellow pull-right">PURCAHSE THEME</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!--*Team*-->
+    <section id="educate-team">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title">
+                        <span>Our Teachers</span>
+                    </h2>             
+                </div>
+            </div>
+            <div class="row slider-educteam">
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/rmember-1.jpg' %}" alt="team">
+                        </figure>
+                        <div class="team-overlay">
+                            <div class="member_name">
+                                <h3>Adam Smith</h3>
+                                <span>Language Teacher</span>
+                            </div>
+                            <div class="about-tech">
+                                <p>On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                             </div>
+                             <ul class="socialicons">
+                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/rmember-2.jpg' %}" alt="team">
+                        </figure>
+                        <div class="team-overlay">
+                            <div class="member_name">
+                                <h3>Adam Smith</h3>
+                                <span>Language Teacher</span>
+                            </div>
+                            <div class="about-tech">
+                                <p>On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                             </div>
+                             <ul class="socialicons">
+                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/rmember-3.jpg' %}" alt="team">
+                        </figure>
+                        <div class="team-overlay">
+                            <div class="member_name">
+                                <h3>Adam Smith</h3>
+                                <span>Language Teacher</span>
+                            </div>
+                            <div class="about-tech">
+                                <p>On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                             </div>
+                             <ul class="socialicons">
+                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 item">
+                    <div class="team_member">
+                        <figure class="effect-julia">
+                            <img src="{% static 'images/team/rmember-4.jpg' %}" alt="team">
+                        </figure>
+                        <div class="team-overlay">
+                            <div class="member_name">
+                                <h3>Adam Smith</h3>
+                                <span>Language Teacher</span>
+                            </div>
+                            <div class="about-tech">
+                                <p>On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                             </div>
+                             <ul class="socialicons">
+                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* End Team*-->
+
+    <!--* Testimonial*-->
+    <section id="const-testi" class="edu-testimonial">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <!-- section title -->
+            <div class="section_heading">
+                <div class="mt_heading edu_head">
+                    <h2 class="section_title white">
+                        <span>What they say</span>
+                    </h2>             
+                </div>
+            </div>
+
+            <div class="row slider-eductestimo">
+                <div class="col-sm-4">
+                    <div class="item">
+                    <div class="testimonial_main">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <div class="client-pic"><img src="{% static 'images/team/member-1.jpg' %}" alt=""></div>
+                        <h4>
+                            <a href="#" class="text-uppercase">Christ Daniel</a>
+                            <span>MD of Nicolos</span>
+                        </h4>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="item">
+                        <div class="testimonial_main">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                            <div class="client-pic"><img src="{% static 'images/team/member-2.jpg' %}" alt=""></div>
+                            <h4>
+                                <a href="#" class="text-uppercase">John Wakson</a>
+                                <span>CEO Of Micro group</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="item">
+                        <div class="testimonial_main">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                            <div class="client-pic"><img src="{% static 'images/team/member-3.jpg' %}" alt=""></div>
+                            <h4>
+                                <a href="#" class="text-uppercase">Tim Loran</a>
+                                <span>CEO Of Tim Lake</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* EndTestimonial*-->
+
+    <!--* Blog*-->
+    <section id="mt_blog" class="light-bg">
+        <div class="container wow slideInDown" data-wow-duration="2s">
+            <div class="blog_post_sec">
+	            <div class="blog_post_inner">
+	                <!-- section title -->
+		            <div class="section_heading wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+		                <div class="section_heading">
+                            <div class="mt_heading edu_head">
+                                <h2 class="section_title">
+                                    <span>Latest News & Blogs</span>
+                                </h2>             
+                            </div>
+                        </div>
+		            </div>
+	                <div class="row">
+	                    <div class="col-md-4 col-sm-12 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_02.jpg' %}" alt="image" class="img-responsive center-block post_img" />
+                                            </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Begainer Guideline of UI/UX</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Mon, 04-09-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail">
+	                                            <a href="blog-details.html" class="mt_btn_yellow">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_13.jpg' %}" alt="image" class="img-responsive center-block post_img" />
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Students Career Guidline</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Tues, 04-15-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail">
+	                                            <a href="blog-details.html" class="mt_btn_yellow">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+	                        <div class="blog-post_wrapper">
+	                            <div class="blog-post-inner_wrapper">
+	                                <div class="blog-post-image">
+	                                    <div class="clearfix">
+	                                        <div class="img">
+	                                            <img src="{% static 'images/blog-listing/blog_15.jpg' %}" alt="image" class="img-responsive center-block post_img" />
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="post-detail_container">
+	                                    <div class="post-content">
+	                                        <h3 class="post-title entry-title">
+	                                            <a href="blog-details.html">Future of Information Technology</a>
+	                                        </h3>
+	                                        <ul class="list-unstyled list-inline post-metadata">
+	                                            <li>
+	                                                <i class="ion-ios-stopwatch-outline"></i> Tues, 04-15-2018&nbsp;&nbsp;| </li>
+	                                            <li>
+	                                                <a href="#"><i class="ion-ios-chatbubble-outline"></i>&nbsp;
+	                                                Comments(5)</a>
+	                                            </li>
+	                                        </ul>
+	                                        <p class="post-excerpt"> Sed ut perspiciatis unde omnis iste natus erro sit voluiptatem accusantium doloremque ips totam quae ab illo inventore. </p>
+	                                        <div class="view_detail">
+	                                            <a href="blog-details.html" class="mt_btn_yellow">Read more</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>    
+	            </div>
+ 			</div>
+        </div>
+    </section>
+    <!--* End Blog*-->
+
+    <section id="newsletter" class="wow slideInLeft" data-wow-duration="2s">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-6">
+        			<div class="news-content">
+	                    <h2>Like to become an instructor?</h2>
+	                    <p class="mar-0">Lorem ipsums dolors sit amet consectetur adipiselo elit sed do eiused tempor the incididunt ut labore et.</p>
+	                </div>
+        		</div>
+        		<div class="col-md-6">
+        			<div class="mailpoet_form">
+	                    <form target="_self" method="post" action="" novalidate="">
+	                        <input type="email" class="mailpoet_text" name="" title="Email" placeholder="Please specify a valid email address.">
+
+	                        <div class="button"><input type="submit" class="mailpoet_submit" value="Subscribe!"></div>
+	                    </form>
+	                </div>
+        		</div>
+        	</div>
+        </div>
+    </section>
+
+    <!--*Footer*-->
+    <footer id="mt_footer">
+        <div class="container">
+
+            <div class="row wow slideInLeft">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="follow_us">
+                        <a href="index.html">
+                            <img src="{% static 'images/w-logo.png' %}" alt="Logo">
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+                        <h4>Follow Us on</h4>
+                        <ul class="social_icons">
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_contact_ftr">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-quick-links-4">
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a></li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_post_ftr">
+                        <h3>Latest Posts</h3>
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-1.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Unde omnis iste natus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-8.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Aenean a mi et risus facilisis</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-5.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                        <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibuss</a>
+                                    </h4>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{% static 'images/blog/r-post-7.jpg' %}" alt="image" />
+                                <div class="post_contnt_ftr">
+                                    <p>Fri, 03-07-2018 |
+                                       <a href="#"><span> Comment (8)</span></a>
+                                    </p>
+                                    <h4>
+                                        <a href="#">Egestas luctus urna vitae dapibus</a>
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="mt_post_ftr">
+                        <h3>Contact</h3>
+                        <div class="textwidget"><p class="white">PO Box 16122 Grasswood Street West<br>
+                            Sydney 5217 Australia</p>
+                            <p class="white">Mon-Thu: 9:00 – 21:00<br>
+                            Fri: 8:00 – 21:00<br>
+                            Sat: 10:00 – 15:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt_footer_copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copy_txt">
+                            <p class="mar-0 white">&copy; Copyright 2018 - starcross All rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="made_txt">
+                           <ul class="pull-right">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--* End Footer*-->
+
+    <!-- back to top -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-placement="left">
+        <span class="fa fa-arrow-up"></span>
+    </a>
+
+    <!--*Scripts*-->
+
+    <!-- Latest jquery --><script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+    <!-- latest Bootstrap --><script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Parallax jquery --><script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+    
+    <!-- Fancybox jquery --><script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+
+    <!-- Easing Jquery --><script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <!-- Swiper slider jquery --><script src="{% static 'js/swiper.js' %}"></script>
+
+    <!-- wow animated jquery --><script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!-- Navigation jquery --><script src="{% static 'js/jquery.nav.js' %}"></script>
+
+    <!-- Slick jquery --><script src="{% static 'js/slick.js' %}"></script>
+
+    <!-- Slicknav jquery --><script src="{% static 'js/slicknav.js' %}"></script>
+
+    <!-- custom nav jquery --><script src="{% static 'js/custom-nav.js' %}"></script>
+
+    <!-- Owl Carousel Jquery --><script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- Appear Jquery --><script src="{% static 'js/jquery.appear.js' %}"></script>
+
+    <!-- isotope Jquery --><script src="{% static 'js/isotope.min.js' %}"></script>
+
+    <!-- CountTo Jquery --><script src="{% static 'js/jquery.countTo.js' %}"></script>
+
+    <!-- Touch Swipe Jquery --><script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+
+    <!-- Popup video Jquery --><script src="{% static 'js/jquery-modal-video.min.js' %}"></script>
+
+    <!-- main default Jquery --><script src="{% static 'js/main.js' %}"></script>
+
+    
+
+</body>
+
+</html>
